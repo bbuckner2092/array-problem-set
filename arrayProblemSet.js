@@ -14,7 +14,8 @@ printReverse([3,6,2,5])
 function isUniform(arr) {
 // created a var that holds the 1st index of arr
 	var first = arr[0];
-	for (var i = 0; i < arr.length; i++) {
+// started at 1 because we are already using arr[0]
+	for (var i = 1; i < arr.length; i++) {
 // argument number is not equal to 1st index of arr
 // Return false
 		if (arr[i] !== first) {
@@ -25,3 +26,24 @@ function isUniform(arr) {
 }
 
 // sumArray()
+function sumArray(arr) {
+	// created a var to hold a total
+	var total = 0;
+	arr.forEach(function(element) {
+		total += element;
+	});
+	return total;
+}
+
+// max()
+
+function max(arr) {
+	var max = arr[0];
+// started t 1 because we are using 0 from arr[0]
+	for (var i = 1; i < arr.length; i++) {
+		if (arr[i] > max) {
+			max = arr[i];
+		}
+	}
+	return max;
+}
