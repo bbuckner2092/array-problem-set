@@ -9,3 +9,16 @@ function printReverse(arr){
 printReverse([3,6,2,5])
 console.log("**********");
 printReverse(["a", "b", "c"])
+
+// isUniform() - true if array is identical
+// Create a function isUniform()
+// 
+function isUniform(arr) {
+	var first = arr[0];
+	for (var i = 1; i < arr.length; i++) {
+		if (arr[i] !== first) {
+			return false;
+		}
+	}
+	return true;
+}
