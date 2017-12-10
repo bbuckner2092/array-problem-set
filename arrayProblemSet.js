@@ -7,3 +7,5 @@ function printReverse(arr){
 }
 
 printReverse([3,6,2,5])
+console.log("**********");
+printReverse(["a", "b", "c"])
