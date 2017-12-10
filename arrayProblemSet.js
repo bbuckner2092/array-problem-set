@@ -7,18 +7,21 @@ function printReverse(arr){
 }
 
 printReverse([3,6,2,5])
-console.log("**********");
-printReverse(["a", "b", "c"])
 
 // isUniform() - true if array is identical
 // Create a function isUniform()
-// 
+// that takes in the argument array
 function isUniform(arr) {
+// created a var that holds the 1st index of arr
 	var first = arr[0];
-	for (var i = 1; i < arr.length; i++) {
+	for (var i = 0; i < arr.length; i++) {
+// argument number is not equal to 1st index of arr
+// Return false
 		if (arr[i] !== first) {
 			return false;
 		}
 	}
 	return true;
 }
+
+// sumArray()
